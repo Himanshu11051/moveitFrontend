@@ -41,9 +41,8 @@ var moveitAppActions = {
 				
 				$scope.performAction = function() {
 					mprogress.start();
-					$scope.checkAppStatus();
-					
-				}
+					$scope.checkAppStatus();					
+				};
 
 			}]);
 		},

@@ -1,167 +1,148 @@
-md-toast {
-	float: right !important;
-	position: relative !important;
+/* Move It App Custom CSS File
+ * @Author: Himanshu
+ */
+body {
+	overflow: hidden !important;
 }
 
-header {
+.appHeader {
+	background: #1976D2 !important;
+	height: 55px !important;
+	padding-top: 2px !important;
+}
+
+.appFooter {
+	bottom: 0 !important;
+	left: 7%;
 	position: absolute;
-	border-radius: 50px;
-	top: 5px;
-	left: 5px;
-	border: 1px solid rgba(189, 189, 189, 0.34);
-	padding: 10px;
-	font-size: 23px;
-	color: rgba(189, 189, 189, 0.75);
-	width: 12%;
+	padding: 0;
+}
+
+.appLogo {
+	width: 36%;
+	left: 90%;
+	top: 16%;
+	position: absolute;
+}
+
+.appBrand {
+	transition: all .2s ease-in-out;
+}
+
+.appBrand:hover {
+	transform: scale(1.1);
+}
+
+.appQuote {
+	text-align: center !important;
+	display: inline;
+	border-left: none;
+}
+
+.appQuote .fa-quote-right {
+	float: right;
+}
+
+.appQuote .fa-quote-left {
+	float: left;
+}
+
+.appSidebar {
+	z-index: 5;
+	background: #fff;
+	box-shadow: -10px 0px 20px 0px rgba(112, 112, 112, 0.6);
+	top: 57px;
+	padding: 15px;
+	position: absolute;
+	right: 0px;
+	display: none;
+}
+
+.appSidebar ul {
+	list-style: none;
+	text-align: justify;
+}
+
+.appSidebar ul li {
+	margin-top: 20px;
 	cursor: pointer;
 }
 
-header:hover {
-	background: #fff;
-	color: #333333;
-}
-/*
- * Globals
- */
-
-/* Links */
-a, a:focus, a:hover {
-	color: #fff;
+.appSidebar ul li:hover {
+	font-weight: 500;
+	color: #1976d2;
 }
 
-/* Custom default button */
-.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
-	color: #333;
-	text-shadow: none; /* Prevent inheritance from `body` */
-	background-color: #fff;
-	border: .05rem solid #fff;
-}
-
-/*
- * Base structure
- */
-html, body {
-	height: 100%;
-	background-color: #333;
-}
-
-body {
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-	display: table;
+.appBackdrop {
+	position: absolute;
+	z-index: 4;
+	top: 57px;
 	width: 100%;
-	height: 100%; /* For at least Firefox */
-	min-height: 100%;
-	-webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-	box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+	background: rgba(96, 96, 96, 0.65);
+	display: none;
 }
 
-.site-wrapper-inner {
-	display: table-cell;
-	vertical-align: top;
+.sidebarToggleBtn {
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	height: 40px;
+	padding: 8px;
+	width: 40px;
+	border-radius: 50% !important;
+	will-change: box-shadow, transform;
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color
+		0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cover-container {
-	margin-right: auto;
-	margin-left: auto;
+.welcomeContainer {
+	top: 100px !important;
 }
 
-/* Padding for spacing */
-.inner {
-	padding: 2rem;
+.welcomeContainer>.section {
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
-/*
- * Header
- */
-.masthead {
-	margin-bottom: 2rem;
+.welcomeContainer h1 {
+	color: rgba(96, 96, 96, 0.90);
 }
 
-.masthead-brand {
-	margin-bottom: 0;
+.welcomeContainer h1>strong {
+	color: #606060 !important;
 }
 
-.nav-masthead .nav-link {
-	padding: .25rem 0;
-	font-weight: bold;
-	color: rgba(255, 255, 255, .5);
-	background-color: transparent;
-	border-bottom: .25rem solid transparent;
+a:hover, a:focus {
+	color: #1976d2;
 }
 
-.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
-	border-bottom-color: rgba(255, 255, 255, .25);
+.btnAppTheme {
+	background-color: #F9A825;
+	color: #FFFFFF;
 }
 
-.nav-masthead .nav-link+.nav-link {
-	margin-left: 1rem;
+.btnAppTheme:hover {
+	background-color: #F9A825;
+	color: #FFFFFF;
 }
 
-.nav-masthead .active {
-	color: #fff;
-	border-bottom-color: #fff;
+.btnAppTheme:focus {
+	background-color: #F9A825 !important;
+	color: #FFFFFF;
 }
 
-@media ( min-width : 48em) {
-	.masthead-brand {
-		float: left;
-	}
-	.nav-masthead {
-		float: right;
-	}
+.btnAppTheme:active {
+	background-color: #F9A825 !important;
+	color: #FFFFFF;
 }
 
-/*
- * Cover
- */
-.cover {
-	padding: 0 1.5rem;
+.ui-mprogress .peg {
+	box-shadow: 0 0 10px #f9a825, 0 0 5px #f9a825 !important;
 }
 
-.cover .btn-lg {
-	padding: .75rem 1.25rem;
-	font-weight: bold;
-}
-
-/*
- * Footer
- */
-.mastfoot {
-	color: rgba(255, 255, 255, .5);
-}
-
-/*
- * Affix and center
- */
-@media ( min-width : 40em) {
-	/* Pull out the header and footer */
-	.masthead {
-		position: fixed;
-		top: 0;
-	}
-	.mastfoot {
-		position: fixed;
-		bottom: 0;
-	}
-	/* Start the vertical centering */
-	.site-wrapper-inner {
-		vertical-align: middle;
-	}
-	/* Handle the widths */
-	.masthead, .mastfoot, .cover-container {
-		width: 100%;
-		/* Must be percentage or pixels for horizontal alignment */
-	}
-}
-
-@media ( min-width : 62em) {
-	.masthead, .mastfoot, .cover-container {
-		width: 42rem;
-	}
+.ui-mprogress .deter-bar {
+	background: #f9a825 !important;
 }
