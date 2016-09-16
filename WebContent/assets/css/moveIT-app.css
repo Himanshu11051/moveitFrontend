@@ -115,6 +115,7 @@ body {
 	color: #606060 !important;
 }
 
+
 a:hover, a:focus {
 	color: #1976d2;
 }
@@ -145,4 +146,24 @@ a:hover, a:focus {
 
 .ui-mprogress .deter-bar {
 	background: #f9a825 !important;
+}
+
+.basicInfoContainer {
+	top: 100px !important;
+}
+
+.basicInfoContainer>.section {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.basicInfoContainer h1 {
+	color: rgba(96, 96, 96, 0.90);
+}
+
+.basicInfoContainer h1>strong {
+	color: #606060 !important;
+}
+.basicInfoContainer .footer{
+	text-align: center;
 }

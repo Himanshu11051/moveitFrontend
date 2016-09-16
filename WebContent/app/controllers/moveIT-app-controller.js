@@ -3,9 +3,9 @@
  */ 
 var moveitAppActions = {
 		moveitAppCtrl : function(){
-			angular.module('moveitApp').controller('moveitAppCtrl',['$rootScope','$scope','$mdToast','$state','moveitAppService',function($rootscope, $scope, $mdToast,$state,moveitAppService){
-				
-				$state.go('home.welcome')
+			angular.module('moveitApp').controller('moveitAppCtrl',['$rootScope','$scope','$mdToast','$state','moveitAppService',function($rootscope, $scope, $mdToast, $state, moveitAppService){
+				$scope.view = 'welcome';
+				$state.go('home.welcome');
 				/* Web service call methods start here */
 				var appStatus = moveitAppService.getAppStatus();
 				
@@ -41,7 +41,7 @@ var moveitAppActions = {
 				
 				$scope.gotoBasicInfo = function() {
 					mprogress.start();
-					$scope.checkAppStatus();	
+					$scope.checkAppStatus();
 					$state.go('home.basic-info');
 				};
 
