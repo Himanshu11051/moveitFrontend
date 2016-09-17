@@ -33,9 +33,9 @@
 <aside class="appSidebar col-lg-2 col-md-2 col-sm-4 col-xs-4">
 	<ul>
 
-		<li>About Us</li>
-		<li>Contact</li>
-		<li>Book Now</li>
+		<li data-ng-click = "gotoAboutUs()">About Us</li>
+		<li data-ng-click = "gotoContact()">Contact</li>
+		<li data-ng-click = "gotoBasicInfo()">Book Now</li>
 	</ul>
 </aside>
 <!-- App Sidebar ends here -->
@@ -45,10 +45,10 @@
 	<div class="container">
 		<nav class="pull-left">
 			<ul>
-				<li><a href="#"> Move It </a></li>
-				<li><a href="#"> About Us </a></li>
-				<li><a href="#"> Contact </a></li>
-				<li><a href="#"> Licenses </a></li>
+				<li><a href="" data-ng-click = "gotoHome()"> Move It </a></li>
+				<li><a href="" data-ng-click = "gotoAboutUs()"> About Us </a></li>
+				<li><a href="" data-ng-click = "gotoContact()"> Contact </a></li>
+				<li><a href=""> Licenses </a></li>
 			</ul>
 		</nav>
 		<div class="social-area pull-right">

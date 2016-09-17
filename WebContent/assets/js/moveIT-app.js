@@ -40,4 +40,12 @@ $(document).ready(function(){
 		e.preventDefault();
 		e.stopPropagation();
 	});
+	
+	$(document.body).on('click','.appSidebar li',function(e){
+		$('.appBackdrop').toggle('fade',1000);
+		$('.appSidebar').toggle('slide',{direction: 'right'},1000);
+		e.stopImmediatePropagation();
+		e.preventDefault();
+		e.stopPropagation();
+	});
 });

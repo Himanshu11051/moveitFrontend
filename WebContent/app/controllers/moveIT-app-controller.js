@@ -39,10 +39,22 @@ var moveitAppActions = {
 				$scope.showToast('Welcome To Move It')*/
 				var mprogress = new Mprogress();
 				
+				$scope.gotoHome = function() {
+					$state.go('home.welcome');
+				};
+				
 				$scope.gotoBasicInfo = function() {
 					mprogress.start();
 					$scope.checkAppStatus();
 					$state.go('home.basic-info');
+				};
+				
+				$scope.gotoAboutUs = function(){
+					$state.go('home.about')
+				};
+				
+				$scope.gotoContact = function(){
+					$state.go('home.contact')
 				};
 
 			}]);
