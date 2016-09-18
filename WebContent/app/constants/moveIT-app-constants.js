@@ -18,7 +18,21 @@ var moveItAppConstants = {
 				                        },
 				                        { name : 'Step6', url : 'app/views/basic-info6.html'
 				                        }
-				                       ]
+				                        ],
+				                        BASIC_INFO_HEADER : [
+				                                             { name : 'Step1', text : 'What do you plan to move ?'
+				                                             },
+				                                             { name : 'Step2', text : 'When and where do you plan to move ?'
+				                                             },
+				                                             { name : 'Step3', text : 'Please pick the items you want to move from your home !'
+				                                             },
+				                                             { name : 'Step4', text : 'What all services do you wish to seek ?'
+				                                             },
+				                                             { name : 'Step5', text : 'When can we contact you to discuss your requirements ?'
+				                                             },
+				                                             { name : 'Step6', text : 'How can we contact you ?'
+				                                             }
+				                                             ]
 			});
 		}
 }

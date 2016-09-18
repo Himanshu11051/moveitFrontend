@@ -115,7 +115,6 @@ body {
 	color: #606060 !important;
 }
 
-
 a:hover, a:focus {
 	color: #1976d2;
 }
@@ -150,6 +149,7 @@ a:hover, a:focus {
 
 .basicInfoContainer {
 	top: 100px !important;
+	height: 450px;
 }
 
 .basicInfoContainer>.section {
@@ -164,6 +164,53 @@ a:hover, a:focus {
 .basicInfoContainer h1>strong {
 	color: #606060 !important;
 }
-.basicInfoContainer .footer{
+
+.basicInfoContainer .header {
+	margin-top: -25px;
+	color: rgba(96, 96, 96, 0.90);
+}
+
+.basicInfoContainer .header h2 {
+	font-weight: 400;
+}
+
+.basicInfoContainer .footer {
 	text-align: center;
+	bottom: 0;
+	position: absolute;
+}
+.basicInfoContainer .body .section {
+	padding: 0px !important;
+} 
+
+.basicInfoRadio label{
+	    font-size: 16px !important;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.basicInfoRadio input[type=radio]:checked ~ .circle {
+    border-color: #1976d2 !important;
+}
+
+.basicInfoRadio input[type=radio]:checked ~ .check {
+    background-color: #1976d2 !important;
+}
+.basicInfoRadio label .circle {
+    border: 1px solid rgba(0,0,0, .54);
+    height: 16px !important;
+    width: 16px !important;
+    border-radius: 100%;
+}
+.basicInfoRadio label .check {
+    height: 16px !important;
+    width: 16px !important ;
+    border-radius: 100%;
+    background-color: #1976d2;
+    -webkit-transform: scale3d(0,0,0);
+    -moz-transform: scale3d(0,0,0);
+    -o-transform: scale3d(0,0,0);
+    -ms-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
 }

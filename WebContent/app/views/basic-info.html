@@ -3,24 +3,32 @@
 <div class="main main-raised basicInfoContainer">
 	<div class="section">
 		<div class="container">
-			<div class="row tim-row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
-					<!-- <button data-ng-click="changeStepBackwards()"
-						data-ng-show="currentStep > 0">BACK</button> -->
-
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 					<button
 						class="btn btn-fab btn-fab-mini btn-round waves-effect waves-light"
-						data-ng-click="changeStepBackwards()" data-ng-show="currentStep > 0">
+						data-ng-click="changeStepBackwards()"
+						data-ng-show="currentStep > 0">
 						<i class="fa fa-arrow-left"> </i>
 					</button>
+				</div>
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 header">
+					<h2>
+						{{basicInfoHeader[currentStep].text}}
+					</h2>
 
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body">
-					<div data-ng-include="basicInfoTemplates[currentStep].url"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body"
+					data-ng-include="basicInfoTemplates[currentStep].url">
+					<!-- 	<div data-ng-include="basicInfoTemplates[currentStep].url"></div> -->
 				</div>
+			</div>
+
+			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
-
-
 					<button class="btn btnAppTheme waves-effect waves-light"
 						data-ng-click="changeStepForward()" data-ng-show="currentStep < 5">
 						NEXT
@@ -28,10 +36,11 @@
 					</button>
 				</div>
 			</div>
-
 		</div>
+
 	</div>
 </div>
+
 
 
 
