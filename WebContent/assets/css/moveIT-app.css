@@ -271,6 +271,9 @@ a:hover, a:focus {
     background: #1976d2 !important;
     color: #fff !important;
 }
+ md-icon {
+    color: rgb(153, 153, 153) !important;
+}
 .datePickerDiv{
 	margin-top: 15px;
 }
