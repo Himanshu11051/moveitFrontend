@@ -32,7 +32,8 @@
 				<div class="row text-center">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<button class="btn btnAppTheme waves-effect waves-light"
-							name="Register" data-toggle="modal" data-target="#myModal">Okay, I'm In !</button>
+							name="Register" data-toggle="modal" data-target="#verifyOTPModal" data-backdrop="static" data-keyboard="false">Okay,
+							I'm In !</button>
 					</div>
 				</div>
 			</div>
@@ -62,21 +63,40 @@
 		</div>
 	</div>
 </div>
-<!-- Modal Core -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info btn-simple">Save</button>
-      </div>
-    </div>
-  </div>
+<!-- Verify OTP Modal Starts Here -->
+<div class="modal fade" id="verifyOTPModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Thanks for sharing
+					your details...</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row text-center">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						We have sent you a verification code on your mobile device. <br>
+						Please enter it to verify and proceed.
+					</div>
+				</div>
+
+				<div class="row">
+					<div
+						class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-push-4 col-lg-push-4">
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Enter OTP</label> <input type="text"
+								class="form-control"> <span class="material-input"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default btn-simple waves-effect waves-light">Resend OTP</button>
+				<button type="button" class="btn btn-primary btn-simple waves-effect waves-light">Verify</button>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- Verify OTP Modal Ends Here -->
