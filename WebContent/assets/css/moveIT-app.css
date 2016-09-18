@@ -315,3 +315,6 @@ md-icon {
 .navigateBackBtn i{
 	font-size: 24px !important;
 }
+.modal-backdrop {
+    position: inherit !important;
+}
