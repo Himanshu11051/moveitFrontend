@@ -217,7 +217,10 @@ a:hover, a:focus {
 	-ms-transform: scale3d(0, 0, 0);
 	transform: scale3d(0, 0, 0);
 }
-
+.basicInfoCheckbox input[type=checkbox]:checked + .checkbox-material .check {
+    background: #1976d2 !important;
+    border: 1px solid #1976d2 !important;
+}
 .form-group.is-focused label, .form-group.is-focused label.control-label
 	{
 	color: #1976d2 !important;
@@ -236,7 +239,6 @@ a:hover, a:focus {
 	border-bottom-color: rgb(25, 118, 210) !important;
 }
 
-
 .md-button.md-icon-button {
 	line-height: 40px !important;
 	margin-left: -12px !important;
@@ -251,29 +253,39 @@ a:hover, a:focus {
 	{
 	background: rgb(25, 118, 210) !important;
 }
-.md-calendar-date.md-calendar-date-today .md-calendar-date-selection-indicator{
+
+.md-calendar-date.md-calendar-date-today .md-calendar-date-selection-indicator
+	{
 	border: 1px solid rgb(25, 118, 210) !important;
 }
+
 .md-datepicker-open .md-datepicker-calendar-icon {
-    color: rgb(25, 118, 210) !important;
+	color: rgb(25, 118, 210) !important;
 }
-.md-datepicker-input{
+
+.md-datepicker-input {
 	width: 100% !important;
 }
-.md-datepicker-input-container{
+
+.md-datepicker-input-container {
 	border-bottom-color: rgb(210, 210, 210) !important;
 }
-.md-default-theme .md-datepicker-input::-webkit-input-placeholder, .md-datepicker-input::-webkit-input-placeholder {
-    color: #AAAAAA !important;
-    font-weight: 400 !important;
+
+.md-default-theme .md-datepicker-input::-webkit-input-placeholder,
+	.md-datepicker-input::-webkit-input-placeholder {
+	color: #AAAAAA !important;
+	font-weight: 400 !important;
 }
+
 .md-calendar-day-header {
-    background: #1976d2 !important;
-    color: #fff !important;
+	background: #1976d2 !important;
+	color: #fff !important;
 }
- md-icon {
-    color: rgb(153, 153, 153) !important;
+
+md-icon {
+	color: rgb(153, 153, 153) !important;
 }
-.datePickerDiv{
+
+.datePickerDiv {
 	margin-top: 15px;
 }

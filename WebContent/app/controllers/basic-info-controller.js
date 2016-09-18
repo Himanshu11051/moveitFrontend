@@ -15,6 +15,9 @@ var basicInfoActions = {
 				};
 				$scope.basicInfoHeader = moveItAppConstant.BASIC_INFO_HEADER;
 				$scope.shiftingDate = '';
+				$scope.basicInfoMoveCategory = moveItAppConstant.BASIC_INFO_MOVE_CATEGORY;
+				$scope.basicInfoServiceRequired = moveItAppConstant.BASIC_INFO_SERVICE_REQUIRED;
+				$scope.basicInfoContactTime = moveItAppConstant.BASIC_INFO_CONTACT_TIME;
 			}]);
 		},
 };
