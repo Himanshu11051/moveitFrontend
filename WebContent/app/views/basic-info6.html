@@ -1,7 +1,82 @@
 <div class="section">
 	<div
 		class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xs-push-1 col-sm-push-1 col-md-push-1 col-lg-push-1">
-
-
+		<div class="row">
+			<div
+				class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contactInfoLeftSection">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Name</label> <input type="text"
+								class="form-control"> <span class="material-input"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Mobile No</label> <input type="text"
+								class="form-control"> <span class="material-input"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Email Address</label> <input
+								type="text" class="form-control"> <span
+								class="material-input"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+						<button class="btn btnAppTheme waves-effect waves-light"
+							name="Register" data-toggle="modal" data-target="#myModal">Okay, I'm In !</button>
+					</div>
+				</div>
+			</div>
+			<div
+				class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contactInfoRightSection text-center">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">I don't
+						want to share my details...</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<button class="btn btn-default waves-effect waves-light"
+							data-ng-init="callUsFlag = false"
+							data-ng-click="callUsFlag = ! callUsFlag" name="CallUs">
+							<i class="material-icons">phone</i> I will call you
+						</button>
+					</div>
+				</div>
+				<div class="row" data-ng-show="callUsFlag">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h3>
+							Call us at: <br> <span>8826738938</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
+<!-- Modal Core -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info btn-simple">Save</button>
+      </div>
+    </div>
+  </div>
 </div>

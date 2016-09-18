@@ -217,10 +217,13 @@ a:hover, a:focus {
 	-ms-transform: scale3d(0, 0, 0);
 	transform: scale3d(0, 0, 0);
 }
-.basicInfoCheckbox input[type=checkbox]:checked + .checkbox-material .check {
-    background: #1976d2 !important;
-    border: 1px solid #1976d2 !important;
+
+.basicInfoCheckbox input[type=checkbox]:checked+.checkbox-material .check
+	{
+	background: #1976d2 !important;
+	border: 1px solid #1976d2 !important;
 }
+
 .form-group.is-focused label, .form-group.is-focused label.control-label
 	{
 	color: #1976d2 !important;
@@ -288,4 +291,27 @@ md-icon {
 
 .datePickerDiv {
 	margin-top: 15px;
+}
+
+.contactInfoLeftSection {
+	border-right: 1px solid #AAAAAA;
+}
+
+.contactInfoRightSection .row:nth-child(2) {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.contactInfoRightSection .row:nth-child(2) button>i{
+	margin-left: -15px;
+    margin-right: 5px;
+}
+.contactInfoRightSection .row:nth-child(3) h3 {
+	color: #707070;
+}
+
+.contactInfoRightSection .row:nth-child(3) span {
+	font-weight: 400;
+}
+.navigateBackBtn i{
+	font-size: 24px !important;
 }
