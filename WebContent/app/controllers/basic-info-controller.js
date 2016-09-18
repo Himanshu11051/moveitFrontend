@@ -14,7 +14,7 @@ var basicInfoActions = {
 					$scope.currentStep --;
 				};
 				$scope.basicInfoHeader = moveItAppConstant.BASIC_INFO_HEADER;
-
+				$scope.shiftingDate = '';
 			}]);
 		},
 };
