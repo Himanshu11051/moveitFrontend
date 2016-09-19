@@ -1,7 +1,35 @@
 <div class="section" data-ng-cloak>
 	<div
 		class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xs-push-1 col-sm-push-1 col-md-push-1 col-lg-push-1">
+		<div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 moveIt-tab-container">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 moveIt-tab-menu">
+				<div class="list-group">
+					<a href=""
+						class="list-group-item text-center waves-effect waves-light"
+						data-ng-repeat="tabs in moveItTabsCategory"
+						data-ng-class="{'active': currentTab == $index}"
+						data-ng-click="showActiveTab($index)"> {{tabs.name}} </a>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 moveIt-tab">
+				<div class="moveIt-tab-content"
+					data-ng-repeat="itemCategory in moveItHomeItemCategory"
+					data-ng-class="{'active': currentTab == $index}">
+					<div data-ng-repeat="type in itemCategory">
+						<div data-ng-repeat="item in type">{{item.name}}</div>
+					</div>
 
+				</div>
+				<!-- <div class="moveIt-tab-content"
+					data-ng-class="{'active': currentTab == 1}">Dining Room Items List</div>
+				<div class="moveIt-tab-content"
+					data-ng-class="{'active' : currentTab == 2}">Drawing Room Items List</div>
+				<div class="moveIt-tab-content"
+					data-ng-class="{'active' : currentTab == 3}">Kitchen Items List</div>
+				<div class="moveIt-tab-content"
+					data-ng-class="{'active' : currentTab == 4}">Other Items List</div> -->
+			</div>
+		</div>
 
 	</div>
 </div>

@@ -39,7 +39,35 @@ var moveItAppConstants = {
 	                                   {time : 'Lunch (12PM to 3PM)'},
 	                                   {time : 'Evening (3PM to 7PM)'},
 	                                   {time : 'Night (7PM to 9PM)'}
-		                              ]                               
+		                              ],
+                MOVEIT_TAB_CATEGORY : [
+                                       {tab : 0, name : 'Bed Room'},
+                                       {tab : 1, name : 'Dining Room'},
+                                       {tab : 2, name : 'Drawing Room'},
+                                       {tab : 3, name : 'Kitchen'},
+                                       {tab : 4, name : 'Others'},
+                                      ],
+          MOVEIT_HOME_ITEM_CATEGORY : [
+                                       {
+                                    	   Bedroom : [
+                                    	              {item : 1, name: 'Bed'},
+                                    	              {item : 2, name: 'TV'},
+                                    	              {item : 3, name: 'Wardrobe '},
+                                    	              {item : 4, name: 'Table'},
+                                    	              {item : 5, name: 'Chair'},
+                                    	              ]                                    	              
+                                       },
+                                       {
+                                    	   DiningRoom : [
+                                          	              {item : 1, name: 'Abc'},
+                                          	              {item : 2, name: 'Def'},
+                                          	              {item : 3, name: 'Ghi '},
+                                          	              {item : 4, name: 'RTY'},
+                                          	              {item : 5, name: 'ZXC'},
+                                          	              ]
+                                       }
+                                      ]                      
+		                                                         
 			});
 		}
 }
