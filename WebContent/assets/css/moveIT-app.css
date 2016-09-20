@@ -429,3 +429,80 @@ div.moveIt-tab div.moveIt-tab-content:not(.active){
 div.moveIt-tab-menu div.list-group>a.notActive{
 	background-color: #606060;
 }
+.moveItItems {
+    border: 2px solid #f9a825;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #f9a825;
+    box-shadow: 5px 2px 10px 1px #afafaf;
+    cursor: pointer;
+    text-align: center;
+}
+.moveItItems:hover{
+	background: #f9a825;
+    color: #fff;
+}
+.moveItItems.active{
+	background: #f9a825;
+    color: #fff;
+}
+.moveItTableContainer{
+	z-index: 10;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 10px 20px rgb(153, 153, 153);
+    box-shadow: 0 10px 20px rgb(153, 153, 153);
+    -moz-box-shadow: 0 10px 20px rgb(153, 153, 153);
+    background-clip: padding-box;
+    opacity: 0.97;
+    height: 261px;
+    margin-top: 20px;
+        overflow: auto;
+}
+.moveItTableContainer p{
+	top: 90px;
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    color: #707070;
+    font-size: 15px;
+}
+.moveItTableRow{
+	border-bottom: 1px solid #707070;
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 2px 10px rgb(153, 153, 153);
+    box-shadow: 0 2px 10px rgb(153, 153, 153);
+    -moz-box-shadow: 0 2px 10px rgb(153, 153, 153);
+    background-clip: padding-box;
+    opacity: 0.97;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.moveItTableRow .badge{
+	float: left;	
+}
+.moveItTableRow .item{
+	font-size: 15px;
+    font-weight: 400;	
+}
+.plus-minus-controll{
+	position: relative;
+}
+.deleteMoveItTableRow{
+	float: right;
+}
+
+.plus-minus-controll .btn.btn-fab.btn-fab-mini, .deleteMoveItTableRow .btn.btn-fab.btn-fab-mini{
+	height: 20px;
+    min-width: 20px;
+    width: 20px;
+}

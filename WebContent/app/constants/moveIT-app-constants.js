@@ -50,20 +50,55 @@ var moveItAppConstants = {
           MOVEIT_HOME_ITEM_CATEGORY : [
                                        {
                                     	   Bedroom : [
-                                    	              {item : 1, name: 'Bed'},
-                                    	              {item : 2, name: 'TV'},
-                                    	              {item : 3, name: 'Wardrobe '},
-                                    	              {item : 4, name: 'Table'},
-                                    	              {item : 5, name: 'Chair'},
+                                    	              {item : 1, name: 'Bed', selected : false},
+                                    	              {item : 2, name: 'TV', selected : false},
+                                    	              {item : 3, name: 'Wardrobe ', selected : false},
+                                    	              {item : 4, name: 'Table', selected : false},
+                                    	              {item : 5, name: 'Chair', selected : false},
+                                    	              {item : 6, name: 'Lamp', selected : false}
                                     	              ]                                    	              
                                        },
                                        {
                                     	   DiningRoom : [
-                                          	              {item : 1, name: 'Abc'},
-                                          	              {item : 2, name: 'Def'},
-                                          	              {item : 3, name: 'Ghi '},
-                                          	              {item : 4, name: 'RTY'},
-                                          	              {item : 5, name: 'ZXC'},
+                                          	              {item : 1, name: 'QWE', selected : false},
+                                          	              {item : 2, name: 'WER', selected : false},
+                                          	              {item : 3, name: 'ERT ', selected : false},
+                                          	              {item : 4, name: 'RTY', selected : false},
+                                          	              {item : 5, name: 'TYU', selected : false},
+                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              ]
+                                       }
+                                       ,
+                                       {
+                                    	   DrawingRoom : [
+                                          	              {item : 1, name: 'ASD', selected : false},
+                                          	              {item : 2, name: 'SDF', selected : false},
+                                          	              {item : 3, name: 'DFG ', selected : false},
+                                          	              {item : 4, name: 'FGH', selected : false},
+                                          	              {item : 5, name: 'GHJ', selected : false},
+                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              ]
+                                       }
+                                       ,
+                                       {
+                                    	   Kitchen : [
+                                          	              {item : 1, name: 'QAZ', selected : false},
+                                          	              {item : 2, name: 'AZX', selected : false},
+                                          	              {item : 3, name: 'XCV ', selected : false},
+                                          	              {item : 4, name: 'VBN', selected : false},
+                                          	              {item : 5, name: 'MKL', selected : false},
+                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              ]
+                                       }
+                                       ,
+                                       {
+                                    	   Others : [
+                                          	              {item : 1, name: 'EDC', selected : false},
+                                          	              {item : 2, name: 'WSX', selected : false},
+                                          	              {item : 3, name: 'RFV ', selected : false},
+                                          	              {item : 4, name: 'TGB', selected : false},
+                                          	              {item : 5, name: 'YHN', selected : false},
+                                          	              {item : 6, name: 'NGH', selected : false}
                                           	              ]
                                        }
                                       ]                      
