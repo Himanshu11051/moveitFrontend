@@ -50,55 +50,55 @@ var moveItAppConstants = {
           MOVEIT_HOME_ITEM_CATEGORY : [
                                        {
                                     	   Bedroom : [
-                                    	              {item : 1, name: 'Bed', selected : false},
-                                    	              {item : 2, name: 'TV', selected : false},
-                                    	              {item : 3, name: 'Wardrobe ', selected : false},
-                                    	              {item : 4, name: 'Table', selected : false},
-                                    	              {item : 5, name: 'Chair', selected : false},
-                                    	              {item : 6, name: 'Lamp', selected : false}
+                                    	              {item : 1, name: 'Bed', type: 'Bedroom', selected : false},
+                                    	              {item : 2, name: 'TV', type: 'Bedroom', selected : false},
+                                    	              {item : 3, name: 'Wardrobe ', type: 'Bedroom', selected : false},
+                                    	              {item : 4, name: 'Table', type: 'Bedroom', selected : false},
+                                    	              {item : 5, name: 'Chair', type: 'Bedroom', selected : false},
+                                    	              {item : 6, name: 'Lamp', type: 'Bedroom', selected : false}
                                     	              ]                                    	              
                                        },
                                        {
                                     	   DiningRoom : [
-                                          	              {item : 1, name: 'QWE', selected : false},
-                                          	              {item : 2, name: 'WER', selected : false},
-                                          	              {item : 3, name: 'ERT ', selected : false},
-                                          	              {item : 4, name: 'RTY', selected : false},
-                                          	              {item : 5, name: 'TYU', selected : false},
-                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              {item : 1, name: 'QWE', type:'DiningRoom', selected : false},
+                                          	              {item : 2, name: 'WER', type:'DiningRoom', selected : false},
+                                          	              {item : 3, name: 'ERT ', type:'DiningRoom', selected : false},
+                                          	              {item : 4, name: 'RTY', type:'DiningRoom', selected : false},
+                                          	              {item : 5, name: 'TYU', type:'DiningRoom', selected : false},
+                                          	              {item : 6, name: 'NGH', type:'DiningRoom', selected : false}
                                           	              ]
                                        }
                                        ,
                                        {
                                     	   DrawingRoom : [
-                                          	              {item : 1, name: 'ASD', selected : false},
-                                          	              {item : 2, name: 'SDF', selected : false},
-                                          	              {item : 3, name: 'DFG ', selected : false},
-                                          	              {item : 4, name: 'FGH', selected : false},
-                                          	              {item : 5, name: 'GHJ', selected : false},
-                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              {item : 1, name: 'ASD', type:'DrawingRoom', selected : false},
+                                          	              {item : 2, name: 'SDF', type:'DrawingRoom', selected : false},
+                                          	              {item : 3, name: 'DFG ', type:'DrawingRoom', selected : false},
+                                          	              {item : 4, name: 'FGH', type:'DrawingRoom', selected : false},
+                                          	              {item : 5, name: 'GHJ', type:'DrawingRoom', selected : false},
+                                          	              {item : 6, name: 'NGH', type:'DrawingRoom', selected : false}
                                           	              ]
                                        }
                                        ,
                                        {
                                     	   Kitchen : [
-                                          	              {item : 1, name: 'QAZ', selected : false},
-                                          	              {item : 2, name: 'AZX', selected : false},
-                                          	              {item : 3, name: 'XCV ', selected : false},
-                                          	              {item : 4, name: 'VBN', selected : false},
-                                          	              {item : 5, name: 'MKL', selected : false},
-                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              {item : 1, name: 'QAZ', type:'Kitchen', selected : false},
+                                          	              {item : 2, name: 'AZX', type:'Kitchen', selected : false},
+                                          	              {item : 3, name: 'XCV ', type:'Kitchen', selected : false},
+                                          	              {item : 4, name: 'VBN', type:'Kitchen', selected : false},
+                                          	              {item : 5, name: 'MKL', type:'Kitchen', selected : false},
+                                          	              {item : 6, name: 'NGH', type:'Kitchen', selected : false}
                                           	              ]
                                        }
                                        ,
                                        {
                                     	   Others : [
-                                          	              {item : 1, name: 'EDC', selected : false},
-                                          	              {item : 2, name: 'WSX', selected : false},
-                                          	              {item : 3, name: 'RFV ', selected : false},
-                                          	              {item : 4, name: 'TGB', selected : false},
-                                          	              {item : 5, name: 'YHN', selected : false},
-                                          	              {item : 6, name: 'NGH', selected : false}
+                                          	              {item : 1, name: 'EDC', type:'Others', selected : false},
+                                          	              {item : 2, name: 'WSX', type:'Others', selected : false},
+                                          	              {item : 3, name: 'RFV ', type:'Others', selected : false},
+                                          	              {item : 4, name: 'TGB', type:'Others', selected : false},
+                                          	              {item : 5, name: 'YHN', type:'Others', selected : false},
+                                          	              {item : 6, name: 'NGH', type:'Others', selected : false}
                                           	              ]
                                        }
                                       ]                      

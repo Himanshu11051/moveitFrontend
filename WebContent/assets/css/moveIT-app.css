@@ -314,7 +314,28 @@ md-icon {
 .contactInfoRightSection .row:nth-child(3) span {
 	font-weight: 400;
 }
-
+.contactInfoLeftSection .btn-round{
+	text-align: center;
+    float: right;
+    position: relative;
+    bottom: 150px;
+    left: 36px;
+    font-size: 16px;
+    background: #1976d2;
+    cursor: auto;
+}
+.contactInfoLeftSection .btn-round:active{
+	background: #1976d2 !important;
+}
+.contactInfoLeftSection .btn-round:visited{
+	background: #1976d2 !important;
+}
+.contactInfoLeftSection .btn-round:focus{
+	background: #1976d2 !important;
+}
+.contactInfoLeftSection .btn-round:hover{
+	background: #f9a825;
+}
 .navigateBackBtn i {
 	font-size: 24px !important;
 }
