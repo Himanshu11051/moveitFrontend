@@ -4,7 +4,7 @@
 
 var basicInfoActions = {
 		basicInfoCtrl : function(){
-			angular.module('basic-info').controller('basicInfoCtrl',['$rootScope','$scope','$state','moveitAppService','moveItAppConstant',function($rootscope, $scope, $state, moveitAppService, moveItAppConstant){
+			angular.module('basic-info').controller('basicInfoCtrl',['$rootScope','$scope','$state','$timeout','moveitAppService','moveItAppConstant',function($rootscope, $scope, $state, $timeout, moveitAppService, moveItAppConstant){
 
 				$scope.selectedItemsList = [];
 
@@ -30,6 +30,65 @@ var basicInfoActions = {
 				$scope.moveItHomeItemCategory = moveItAppConstant.MOVEIT_HOME_ITEM_CATEGORY;
 				/* Mapping of constants  with scope ends here */
 
+				/* Google Autocomplete place search code starts here */
+				var autocomplete;
+				var sourceInput = $('#autocomplete');
+				var options = {
+						types : ['regions'],
+						bounds: defaultBounds,
+						componentRestrictions: {country: 'in'}
+				}
+				var defaultBounds = new google.maps.LatLngBounds(new google.maps.LatLng(28.6353, 77.225));
+			       $scope.initAutocomplete = function() {
+			        // Create the autocomplete object, restricting the search to geographical
+			        // location types.
+			        autocomplete = new google.maps.places.Autocomplete(
+			            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+			            {types: ['geocode','establishment'],bounds: defaultBounds,componentRestrictions: {country: 'in'}});
+
+			        // When the user selects an address from the dropdown, populate the address
+			        // fields in the form.
+			      }
+
+			       
+			      // Bias the autocomplete object to the user's geographical location,
+			      // as supplied by the browser's 'navigator.geolocation' object.
+			      $scope.geolocate = function() {
+			    	  
+			        if (navigator.geolocation) {
+			          navigator.geolocation.getCurrentPosition(function(position) {
+			            var geolocation = {
+			              lat: position.coords.latitude,
+			              lng: position.coords.longitude
+			            };
+			            var circle = new google.maps.Circle({
+			              center: geolocation,
+			              radius: position.coords.accuracy
+			            });
+			            autocomplete.setBounds(circle.getBounds());
+			          });
+			        }
+			      }
+			
+				
+				/* Google Autocomplete place search code ends here */
+			      $scope.sourceLocation = '';
+			      $scope.setSource = function() {
+			    	  console.log(1);
+			    	  
+			    	 
+				}
+				
+			      $scope.getSourceLocation = function(event){
+			    	  event.target.placeholder = '';
+			    	  $timeout(function(){
+			    		  var data = $("#autocomplete").val();
+				    	  console.log(2);
+				    	  $scope.sourceLocation = data;
+				    	  console.log(data); 
+				    	  console.log($scope.sourceLocation);
+			    	  },1000)
+			      }
 				/* Basic info step3 tabing code starts here */
 				$scope.currentTab = 0;
 				$scope.showActiveTab = function(currentTab) {

@@ -24,11 +24,13 @@ var moveitAppActions = {
 							mprogress.end();
 						}
 						else{
-							alert('failure');
+							console.log('failure');
+							mprogress.end();
 						}
 					},
 					function(error) {
-						alert('Rejected')
+						console.log('Rejected');
+						mprogress.end();
 					});										
 				};				
 				
