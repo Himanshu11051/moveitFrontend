@@ -32,18 +32,17 @@ var basicInfoActions = {
 
 				/* Google Autocomplete place search code starts here */
 				var autocomplete;
-				var sourceInput = $('#autocomplete');
 				var options = {
 						types : ['regions'],
 						bounds: defaultBounds,
 						componentRestrictions: {country: 'in'}
 				}
 				var defaultBounds = new google.maps.LatLngBounds(new google.maps.LatLng(28.6353, 77.225));
-			       $scope.initAutocomplete = function() {
+			       $scope.initAutocomplete = function(autocompleteId) {
 			        // Create the autocomplete object, restricting the search to geographical
 			        // location types.
 			        autocomplete = new google.maps.places.Autocomplete(
-			            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+			            /** @type {!HTMLInputElement} */(document.getElementById(autocompleteId)),
 			            {types: ['geocode','establishment'],bounds: defaultBounds,componentRestrictions: {country: 'in'}});
 
 			        // When the user selects an address from the dropdown, populate the address
@@ -73,20 +72,33 @@ var basicInfoActions = {
 				
 				/* Google Autocomplete place search code ends here */
 			      $scope.sourceLocation = '';
+			      $scope.destLocation = '';
 			      $scope.setSource = function() {
 			    	  console.log(1);
 			    	  
 			    	 
 				}
 				
-			      $scope.getSourceLocation = function(event){
+			      // fetches source location
+			      $scope.getSourceLocation = function(event,id){
 			    	  event.target.placeholder = '';
 			    	  $timeout(function(){
-			    		  var data = $("#autocomplete").val();
+			    		  var data = $(id).val();
 				    	  console.log(2);
 				    	  $scope.sourceLocation = data;
 				    	  console.log(data); 
 				    	  console.log($scope.sourceLocation);
+			    	  },1000)
+			      }
+			   // fetches destination location
+			      $scope.getDestinationLocation = function(event,id){
+			    	  event.target.placeholder = '';
+			    	  $timeout(function(){
+			    		  var data = $(id).val();
+				    	  console.log(2);
+				    	  $scope.destLocation = data;
+				    	  console.log(data); 
+				    	  console.log($scope.destLocation);
 			    	  },1000)
 			      }
 				/* Basic info step3 tabing code starts here */
