@@ -80,10 +80,10 @@ var basicInfoActions = {
 				}
 				
 			      // fetches source location
-			      $scope.getSourceLocation = function(event,id){
+			      $scope.getSourceLocation = function(event,sourceId){
 			    	  event.target.placeholder = '';
 			    	  $timeout(function(){
-			    		  var data = $(id).val();
+			    		  var data = $("#"+sourceId).val();
 				    	  console.log(2);
 				    	  $scope.sourceLocation = data;
 				    	  console.log(data); 
@@ -91,10 +91,10 @@ var basicInfoActions = {
 			    	  },1000)
 			      }
 			   // fetches destination location
-			      $scope.getDestinationLocation = function(event,id){
+			      $scope.getDestinationLocation = function(event,destId){
 			    	  event.target.placeholder = '';
 			    	  $timeout(function(){
-			    		  var data = $(id).val();
+			    		  var data = $("#"+destId).val();
 				    	  console.log(2);
 				    	  $scope.destLocation = data;
 				    	  console.log(data); 
