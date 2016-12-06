@@ -27,18 +27,18 @@ var moveItAppConstants = {
 				                        {category : 'Vehicle'}                           
 				                       ],
 		BASIC_INFO_SERVICE_REQUIRED : [
-		                               {type : ' Packing'},
-		                               {type : ' Loading'},
-		                               {type : ' Unloading'},
-		                               {type : ' Unpacking'}
+		                               {type : ' Packing',selected : false},
+		                               {type : ' Loading',selected : false},
+		                               {type : ' Unloading',selected : false},
+		                               {type : ' Unpacking',selected : false}
 		                               ],
 	        BASIC_INFO_CONTACT_TIME : [
-	                                   {time : "Any time, I'm flexible"},
-	                                   {time : 'Early morning (7AM to 9AM)'},
-	                                   {time : 'Morning (9AM to 12PM)'},
-	                                   {time : 'Lunch (12PM to 3PM)'},
-	                                   {time : 'Evening (3PM to 7PM)'},
-	                                   {time : 'Night (7PM to 9PM)'}
+	                                   {time : "Any time, I'm flexible",selected : false},
+	                                   {time : 'Early morning (7AM to 9AM)',selected : false},
+	                                   {time : 'Morning (9AM to 12PM)',selected : false},
+	                                   {time : 'Lunch (12PM to 3PM)',selected : false},
+	                                   {time : 'Evening (3PM to 7PM)',selected : false},
+	                                   {time : 'Night (7PM to 9PM)',selected : false}
 		                              ],
                 MOVEIT_TAB_CATEGORY : [
                                        {tab : 0, name : 'Bed Room'},

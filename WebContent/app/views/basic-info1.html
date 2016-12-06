@@ -3,7 +3,7 @@
 		class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xs-push-1 col-sm-push-1 col-md-push-1 col-lg-push-1">
 
 		<div class="radio basicInfoRadio" data-ng-repeat = "move in basicInfoMoveCategory">
-			<label> <input type="radio" name="optionsRadios"><span
+			<label> <input type="radio" name="optionsRadios" data-ng-model = "$parent.saveDetailsRequest.category" data-ng-value="move.category"><span
 				class="circle"></span><span class="check"></span> {{move.category}}
 			</label>
 		</div>
