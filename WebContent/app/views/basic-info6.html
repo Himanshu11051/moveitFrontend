@@ -1,13 +1,15 @@
 <div class="section">
 	<div
 		class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xs-push-1 col-sm-push-1 col-md-push-1 col-lg-push-1">
-		<div class="row">
+		<form name="customerDetailsForm" 
+			class="row">
 			<div
 				class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contactInfoLeftSection">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
 							<label class="control-label">Name</label> <input type="text"
+								data-ng-model="saveDetailsRequest.customerName"
 								class="form-control"> <span class="material-input"></span>
 						</div>
 					</div>
@@ -16,29 +18,34 @@
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
 							<label class="control-label">Mobile No</label> <input type="text"
-								class="form-control"> <span class="material-input"></span>
+								name="customerPhoneNo"
+								data-ng-model="saveDetailsRequest.customerPhoneNo" data-ng-required
+								data-ng-blur="validateCustomerDetailsForm(customerDetailsForm.customerPhoneNo.$valid, 'PhoneNo')"
+								onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+								data-ng-pattern="phoneRegex" maxlength="10" class="form-control">
+							<span class="material-input"></span>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
-							<label class="control-label">Email Address</label> <input
-								type="text" class="form-control"> <span
-								class="material-input"></span>
+							<label class="control-label">Email Address</label> <input data-ng-blur="validateCustomerDetailsForm(customerDetailsForm.customerPhoneNo.$valid, 'Email')"
+								data-ng-model="saveDetailsRequest.customerEmail" type="email"
+								class="form-control"> <span class="material-input"></span>
 						</div>
 					</div>
 				</div>
 				<div class="row text-center">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<button class="btn btnAppTheme waves-effect waves-light"
-							name="Register" data-toggle="modal" data-target="#verifyOTPModal" data-backdrop="static" data-keyboard="false">Okay,
-							I'm In !</button>
+							name="Register" data-toggle="modal" data-target="#verifyOTPModal"
+							data-backdrop="static" data-keyboard="false" data-ng-disabled = "customerDetailsForm.$valid == false"
+							data-ng-click="saveMoveDetails('OTP')">Okay, I'm In !</button>
 					</div>
 				</div>
 				<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-	Or
-</button>
+					Or</button>
 			</div>
 			<div
 				class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contactInfoRightSection text-center">
@@ -50,7 +57,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<button class="btn btn-default waves-effect waves-light"
 							data-ng-init="callUsFlag = false"
-							data-ng-click="callUsFlag = ! callUsFlag" name="CallUs">
+							data-ng-click="saveMoveDetails('Call'); callUsFlag = ! callUsFlag" name="CallUs">
 							<i class="material-icons">phone</i> I will call you
 						</button>
 					</div>
@@ -63,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
 <!-- Verify OTP Modal Starts Here -->
@@ -96,8 +103,11 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default btn-simple waves-effect waves-light">Resend OTP</button>
-				<button type="button" class="btn btn-primary btn-simple waves-effect waves-light">Verify</button>
+				<button type="button"
+					class="btn btn-default btn-simple waves-effect waves-light">Resend
+					OTP</button>
+				<button type="button"
+					class="btn btn-primary btn-simple waves-effect waves-light">Verify</button>
 			</div>
 		</div>
 	</div>

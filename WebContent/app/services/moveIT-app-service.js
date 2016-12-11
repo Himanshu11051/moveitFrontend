@@ -8,6 +8,9 @@ var moveitAppResource = {
 				return{
 					getAppStatus : function() {
 						return $resource('http://reqres.in/api/users/2',{},{getdata : {method : 'GET', headers : {'Content-Type': 'application/json'} } })
+					},
+					setAppData : function() {
+						return $resource('http://reqres.in/api/users/2',{},{setdata : {method : 'GET', headers : {'Content-Type': 'application/json'} } })
 					}
 				}
 			}]);

@@ -8,7 +8,7 @@
 				<div class="form-group label-floating is-empty">
 					<label class="control-label">I am shifting from</label> <input
 						type="text" class="form-control" id="autocomplete"
-						data-ng-model="sourceLocation"
+						data-ng-model="saveDetailsRequest.sourceLocation"
 						data-ng-focus="initAutocomplete('autocomplete');geolocate()"
 						data-ng-blur="getSourceLocation($event, 'autocomplete')">
 					<span class="material-input"></span>
@@ -20,7 +20,7 @@
 				<div class="form-group label-floating is-empty">
 					<label class="control-label">To</label> <input type="text"
 						class="form-control" id="autocompleteTo"
-						data-ng-model="destLocation"
+						data-ng-model="saveDetailsRequest.destLocation"
 						data-ng-focus="initAutocomplete('autocompleteTo');geolocate()"
 						data-ng-blur="getDestinationLocation($event, 'autocompleteTo')">
 					<span class="material-input"></span>
@@ -31,7 +31,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 datePickerDiv">
 
 				<md-datepicker data-ng-cloak name="dateField"
-					data-ng-model="shiftingDate" md-placeholder="On (Probable Date)"
+					data-ng-model="saveDetailsRequest.shiftingDate" md-placeholder="On (Probable Date)"
 					md-open-on-focus></md-datepicker>
 
 			</div>
