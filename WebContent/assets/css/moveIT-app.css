@@ -527,3 +527,9 @@ div.moveIt-tab-menu div.list-group>a.notActive{
     min-width: 20px;
     width: 20px;
 }
+.is-not-empty{
+    top: -28px !important;
+    left: 0;
+    font-size: 11px !important;
+    line-height: 1.07143 !important;
+}

@@ -1,13 +1,13 @@
 <link rel="stylesheet" type="text/css"
 	href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 <div class="section" data-ng-cloak>
-	<div
+	<div 
 		class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xs-push-1 col-sm-push-1 col-md-push-1 col-lg-push-1">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="form-group label-floating is-empty">
-					<label class="control-label">I am shifting from</label> <input
-						type="text" class="form-control" id="autocomplete"
+					<label class="control-label" data-ng-class = "{'is-not-empty': saveDetailsRequest.sourceLocation != '' }">I am shifting from</label> <input
+						type="text" class="form-control" id="autocomplete" name="source"
 						data-ng-model="saveDetailsRequest.sourceLocation"
 						data-ng-focus="initAutocomplete('autocomplete');geolocate()"
 						data-ng-blur="getSourceLocation($event, 'autocomplete')">
@@ -18,9 +18,9 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="form-group label-floating is-empty">
-					<label class="control-label">To</label> <input type="text"
-						class="form-control" id="autocompleteTo"
-						data-ng-model="saveDetailsRequest.destLocation"
+					<label class="control-label" data-ng-class = "{'is-not-empty': saveDetailsRequest.destinationLocation != '' }">To</label> <input type="text"
+						class="form-control" id="autocompleteTo" name = "destination"
+						data-ng-model="saveDetailsRequest.destinationLocation"
 						data-ng-focus="initAutocomplete('autocompleteTo');geolocate()"
 						data-ng-blur="getDestinationLocation($event, 'autocompleteTo')">
 					<span class="material-input"></span>

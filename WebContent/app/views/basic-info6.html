@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
-							<label class="control-label">Name</label> <input type="text"
+							<label class="control-label" data-ng-class = "{'is-not-empty': saveDetailsRequest.customerName != '' }">Name</label> <input type="text"
 								data-ng-model="saveDetailsRequest.customerName"
 								class="form-control"> <span class="material-input"></span>
 						</div>
@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
-							<label class="control-label">Mobile No</label> <input type="text"
+							<label class="control-label" data-ng-class = "{'is-not-empty': saveDetailsRequest.customerPhoneNo != '' }">Mobile No</label> <input type="text"
 								name="customerPhoneNo"
 								data-ng-model="saveDetailsRequest.customerPhoneNo" data-ng-required
 								data-ng-blur="validateCustomerDetailsForm(customerDetailsForm.customerPhoneNo.$valid, 'PhoneNo')"
@@ -30,7 +30,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 						<div class="form-group label-floating is-empty">
-							<label class="control-label">Email Address</label> <input data-ng-blur="validateCustomerDetailsForm(customerDetailsForm.customerPhoneNo.$valid, 'Email')"
+							<label class="control-label" data-ng-class = "{'is-not-empty': saveDetailsRequest.customerEmail != '' }">Email Address</label> <input data-ng-blur="validateCustomerDetailsForm(customerDetailsForm.customerPhoneNo.$valid, 'Email')"
 								data-ng-model="saveDetailsRequest.customerEmail" type="email"
 								class="form-control"> <span class="material-input"></span>
 						</div>
